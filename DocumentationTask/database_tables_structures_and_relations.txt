@@ -1,0 +1,14 @@
+
+candidates table
+	id primary key
+	first name varchar 80
+	last name varchar 80
+	email_address varchar 80
+
+jobs table
+	id primary key
+	job_title varchar 80
+	company_name varchar 80
+	start_date timestamp
+	and_date timestamp
+	candidate_id foreign key -> candidates
