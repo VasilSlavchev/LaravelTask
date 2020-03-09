@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html>
+<head>
+    <title>Import CSV Data to MySQL database with Laravel</title>
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
+            <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -62,31 +59,31 @@
                 margin-bottom: 30px;
             }
         </style>
-    </head>
+</head>
+<body>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
+        <div class="content">
+            <div class="title m-b-md">
+                    Laravel
+            </div>
+
+            <!-- Message -->
+            @if(Session::has('message'))
+            <p >{{ Session::get('message') }}</p>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="links">
+                    <a href=""></a>
                 </div>
 
-                <div class="links">
-                    <a href="insert">Insert your CSV file.</a>
-                </div>
+                <!-- Form -->
+                <form method='post' action='insert/uploadFile' enctype='multipart/form-data'>
+                    {{ csrf_field() }}
+                    <input type='file' name='file' >
+                    <input type='submit' name='submit' value='Import'>
+                </form>
 
             </div>
         </div>
