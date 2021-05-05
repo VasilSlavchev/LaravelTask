@@ -88,6 +88,12 @@
                     Laravel
                 </div>
 
+                <p>
+                    @unless (Auth::check())
+                        Hello, there. You are not signed in.
+                    @endunless
+                </p>
+
                 <div class="links">
                     <a href="insert">Insert your CSV file.</a>
                 </div>
