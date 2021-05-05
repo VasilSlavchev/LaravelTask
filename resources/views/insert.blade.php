@@ -3,7 +3,7 @@
 <head>
     <title>Import CSV Data to MySQL database with Laravel</title>
 
-            <!-- Fonts -->
+        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -64,15 +64,15 @@
     <body>
         <div class="flex-center position-ref full-height">
 
-        <div class="content">
-            <div class="title m-b-md">
+            <div class="content">
+                <div class="title m-b-md">
                     Laravel
-            </div>
+                </div>
 
-            <!-- Message -->
-            @if(Session::has('message'))
-            <p >{{ Session::get('message') }}</p>
-            @endif
+                <!-- Message -->
+                @if(Session::has('message'))
+                <p >{{ Session::get('message') }}</p>
+                @endif
 
                 <div class="links">
                     <a href=""></a>
