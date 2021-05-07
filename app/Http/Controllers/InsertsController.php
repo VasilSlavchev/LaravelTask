@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Session;
 use Illuminate\Http\Request;
 use App\Insert;
+use Carbon\Carbon;
 
 class InsertsController extends Controller
 {
@@ -18,7 +19,7 @@ class InsertsController extends Controller
 
             $file = $request->file('file');
 
-            // File Details 
+            // File Details
             $filename = $file->getClientOriginalName();
             $extension = $file->getClientOriginalExtension();
             $tempPath = $file->getRealPath();
@@ -29,7 +30,7 @@ class InsertsController extends Controller
             $valid_extension = array("csv");
 
             // 2MB in Bytes
-            $maxFileSize = 2097152; 
+            $maxFileSize = 2097152;
 
             // Check file extension
             if(in_array(strtolower($extension),$valid_extension)){
@@ -65,23 +66,56 @@ class InsertsController extends Controller
                     foreach($importData_arr as $importData){
 
                         // print_r($filename);
+                        // dd($importData);
 
                         if ($filename == "candidates.csv") {
                             $insertData = array(
-                                "id"=>$importData[0],
-                                "first_name"=>$importData[1],
-                                "last_name"=>$importData[2],
-                                "email"=>$importData[3]);
+                                "id"         => $importData[0],
+                                "first_name" => $importData[1],
+                                "last_name"  => $importData[2],
+                                "email"      => $importData[3]
+                            );
                             Insert::insertData($insertData, $filename);
                         }
                         else if ($filename == "jobs.csv") {
+
+                            $id = $importData[0];
+                            $former_employee = $importData[1];
+                            $job_title = $importData[2];
+                            $company_name = $importData[3];
+
+                            $start_date = $importData[4];
+                            $end_date   = $importData[5];
+
+                            // $start_date = Carbon::parse($importData[4]);
+                            // $end_date   = Carbon::parse($importData[5]);
+
+                            // format date for sql insert
+                            $start_date = date("Y-m-d H:i:s", strtotime($importData[4]));
+                            $end_date   = date("Y-m-d H:i:s", strtotime($importData[5]));
+
+                            // dd($importData);
+                            // dd(
+                            //     $importData[4],
+                            //     $start_date,
+                            //     $importData[5],
+                            //     $end_date,
+                            // );
+
                             $insertData = array(
-                                "id"=>$importData[0],
-                                "former_employee"=>$importData[1], // former_worker
-                                "job_title"=>$importData[2],
-                                "company_name"=>$importData[3],
-                                "start_date"=>$importData[4],
-                                "end_date"=>$importData[5]);
+                                "id"=> $id,
+                                "former_employee"=> $former_employee,
+                                "job_title"=> "'" . $job_title . "'",
+                                "company_name"=> "'" . $company_name . "'",
+                                "start_date"=> $start_date,
+                                "end_date"=> $end_date,
+                            );
+
+                            // dd($insertData);
+
+                            // $importData = str_replace(' ', '', $importData);
+                            // $importData = preg_replace('/\s+/', '', $importData);
+
                             Insert::insertData($insertData, $filename);
                         }
                         else {
@@ -93,7 +127,7 @@ class InsertsController extends Controller
                     }
 
                     Session::flash('message','Import Successful.');
-                } 
+                }
                 else {
                     Session::flash('message','File too large. File must be less than 2MB.');
                 }

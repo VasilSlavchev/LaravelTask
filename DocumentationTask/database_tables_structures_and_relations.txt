@@ -1,3 +1,9 @@
+===================================================
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+===================================================
 
 candidates table
 	id primary key
@@ -5,10 +11,24 @@ candidates table
 	last name varchar 80
 	email_address varchar 80
 
+===================================================
+
 jobs table
 	id primary key
+	former_employee int 11
 	job_title varchar 80
 	company_name varchar 80
 	start_date timestamp
 	and_date timestamp
-	candidate_id foreign key -> candidates
+	former_employee foreign key -> candidates.id
+
+===================================================
+
+ALTER TABLE jobs ADD FOREIGN KEY (id) REFERENCES candidates (id) ON DELETE CASCADE ON UPDATE CASCADE
+
+===================================================
+
+INSERT INTO `jobs`(`id`, `former_employee`, `job_title`, `company_name`, `start_date`, `end_date`)
+VALUES (1, 1, 'Accountant', 'Software Ridge', '2016-05-20 10:31:00', '2019-07-02 15:20:00')
+
+===================================================

@@ -1,0 +1,331 @@
+Array
+(
+    [id] => 1
+    [former_employee] => 1
+    [job_title] => 'Accountant'
+    [company_name] => 'Software Ridge'
+    [start_date] => 2016-05-20 10:31:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 2
+    [former_employee] => 1
+    [job_title] => 'Actor'
+    [company_name] => 'Software Dev'
+    [start_date] => 2016-05-20 08:23:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 3
+    [former_employee] => 1
+    [job_title] => 'Actuary'
+    [company_name] => 'Software Inc'
+    [start_date] => 2017-04-18 08:31:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 4
+    [former_employee] => 2
+    [job_title] => 'Administrative Services Manager'
+    [company_name] => 'Software Rank'
+    [start_date] => 2016-04-29 14:13:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 5
+    [former_employee] => 2
+    [job_title] => 'High School Teachers '
+    [company_name] => 'Software Vine'
+    [start_date] => 2016-12-14 09:55:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 6
+    [former_employee] => 2
+    [job_title] => 'Advertising Sales Agent'
+    [company_name] => 'Ridge Software'
+    [start_date] => 2015-01-14 23:53:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 7
+    [former_employee] => 3
+    [job_title] => 'Advertising'
+    [company_name] => 'Dev Software'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 8
+    [former_employee] => 3
+    [job_title] => 'Operations Technician'
+    [company_name] => 'Inc Software'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 9
+    [former_employee] => 3
+    [job_title] => 'Aerospace Engineer'
+    [company_name] => 'Rank Software'
+    [start_date] => 2015-01-14 23:52:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 10
+    [former_employee] => 4
+    [job_title] => 'Food Science Technician'
+    [company_name] => 'Vine Software'
+    [start_date] => 2015-01-14 23:52:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 11
+    [former_employee] => 4
+    [job_title] => 'Agricultural Scientist'
+    [company_name] => 'Software Ability'
+    [start_date] => 2015-01-14 23:51:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 12
+    [former_employee] => 4
+    [job_title] => 'Agricultural Engineer '
+    [company_name] => 'Software Ex'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 13
+    [former_employee] => 5
+    [job_title] => 'Agricultural Worker'
+    [company_name] => 'Software Industries'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 14
+    [former_employee] => 5
+    [job_title] => 'Air Traffic Controllers'
+    [company_name] => 'Software Zoom'
+    [start_date] => 2015-01-14 23:55:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 15
+    [former_employee] => 5
+    [job_title] => 'Service Technician'
+    [company_name] => 'Software Rhino'
+    [start_date] => 2015-01-14 23:50:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 16
+    [former_employee] => 6
+    [job_title] => 'Aircraft Pilot'
+    [company_name] => 'Ability Software'
+    [start_date] => 2015-01-14 23:52:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 17
+    [former_employee] => 6
+    [job_title] => 'Animal Care and Service Worker'
+    [company_name] => 'Ex Software'
+    [start_date] => 2015-01-14 23:53:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 18
+    [former_employee] => 6
+    [job_title] => 'Announcer'
+    [company_name] => 'Industries Software'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 19
+    [former_employee] => 7
+    [job_title] => 'Anthropologist'
+    [company_name] => 'Zoom Software'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 20
+    [former_employee] => 7
+    [job_title] => 'Appraiser of Real Estate '
+    [company_name] => 'Rhino Software'
+    [start_date] => 2015-01-14 23:50:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 21
+    [former_employee] => 7
+    [job_title] => 'Mediator'
+    [company_name] => 'Software Able'
+    [start_date] => 2015-01-14 23:50:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 22
+    [former_employee] => 8
+    [job_title] => 'Architect'
+    [company_name] => 'Software Bit'
+    [start_date] => 2015-01-14 23:51:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 23
+    [former_employee] => 8
+    [job_title] => 'Architectural and Engineering Manager'
+    [company_name] => 'Software Ink'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 24
+    [former_employee] => 8
+    [job_title] => 'Museum Technician'
+    [company_name] => 'Software Ment'
+    [start_date] => 2015-01-14 23:51:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 25
+    [former_employee] => 9
+    [job_title] => 'Art Director'
+    [company_name] => 'Software Gorilla'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 26
+    [former_employee] => 9
+    [job_title] => 'Artist'
+    [company_name] => 'Able Software'
+    [start_date] => 2015-01-14 23:52:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 27
+    [former_employee] => 9
+    [job_title] => 'Assembler'
+    [company_name] => 'Software Amp'
+    [start_date] => 2015-01-14 23:52:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 28
+    [former_employee] => 10
+    [job_title] => 'Athlete'
+    [company_name] => 'Software Pin'
+    [start_date] => 2015-01-14 23:51:00
+    [end_date] => 2019-02-07 15:19:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 29
+    [former_employee] => 10
+    [job_title] => 'Athletic Trainer'
+    [company_name] => 'Software Velocity'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Array
+(
+    [id] => 30
+    [former_employee] => 10
+    [job_title] => 'Atmospheric Scientist'
+    [company_name] => 'Software Woop'
+    [start_date] => 2015-01-14 23:54:00
+    [end_date] => 2019-02-07 15:20:00
+)
+jobs.csv
+
+Redirecting to http://laraveltaskoriginal.local/insert.
