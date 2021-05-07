@@ -11,7 +11,7 @@ CREATE TABLE `jobs` (
   `job_title` varchar(80) NOT NULL,
   `company_name` varchar(80) NOT NULL,
   `start_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `and_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `end_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   FOREIGN KEY (id) REFERENCES candidates (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -28,6 +28,6 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   `job_title` varchar(80) NOT NULL,
   `company_name` varchar(80) NOT NULL,
   `start_date` datetime NOT NULL,
-  `and_date` datetime NOT NULL,
+  `end_date` datetime NOT NULL,
   FOREIGN KEY (id) REFERENCES candidates (id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
