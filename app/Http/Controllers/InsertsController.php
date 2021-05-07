@@ -15,6 +15,8 @@ class InsertsController extends Controller
 
     public function uploadFile(Request $request){
 
+        dd($request);
+
         if ($request->input('submit') != null ){
 
             $file = $request->file('file');
